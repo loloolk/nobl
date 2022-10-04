@@ -35,6 +35,7 @@ fn formatHashMap(hm: HashMap<String, Hsval>) -> String {
     }
     str
 }
+
 fn saveHashMap(hm: HashMap<String, Hsval>) {
     let mut file = std::fs::File::create("db.nobl").unwrap();
     let str = formatHashMap(hm);
@@ -43,7 +44,6 @@ fn saveHashMap(hm: HashMap<String, Hsval>) {
         file.write_all(str.as_bytes()).unwrap();
     }
 }
-
 fn loadHashMap() -> HashMap<String, Hsval> {
     let mut animes: HashMap<String, Hsval> = HashMap::new();
     let mut file = std::fs::File::open("db.nobl").unwrap();
