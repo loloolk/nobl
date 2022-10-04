@@ -219,7 +219,7 @@ fn main() {
             Ok(1) => addAnime(),
             Ok(2) => removeAnime(),
             Ok(3) => break,
-            _ => println!("That's not a valid option!"),
+            _ => println!("That is not a valid option!"),
         }
     }
 }
