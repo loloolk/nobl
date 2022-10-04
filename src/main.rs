@@ -134,11 +134,11 @@ fn addAnime() {
     }
 
     let doStatus: bool = match status.as_str() {
-        "watching" => true,
-        "completed" | "complete" => false,
-        "on hold" => true,
-        "dropped" => true,
-        "plan to watch" | "planned" | "plan" => false,
+        "Watching" => true,
+        "Wompleted" | "Complete" => false,
+        "On Hold" => true,
+        "Dropped" => true,
+        "Plan To Watch" | "Planned" | "Plan" => false,
         _ => false,
     };
 
